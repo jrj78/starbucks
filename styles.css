@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;  /*remove margens e espaçamentos padrão*/
+    padding: 0; /*remove margens e espaçamentos padrão*/
+    box-sizing: border-box; /*inclui padding e border na largura e altura total do elemento*/
+    font-family: "Poppins", sans-serif; /*fonte padrão*/
+}
+
+/*
+cima - top
+baixo - bottom
+esquerda - left
+direita - right
+background - fundo
+background-image - imagem de fundo
+background-color - cor de fundo
+background-repeat - repetição da imagem de fundo
+background-size - tamanho da imagem de fundo
+background-position - posição da imagem de fundo
+*/
+
+body {
+    padding-top: 20px; /*espaçamento cima*/
+    padding-left: 100px; /*espaçamento esquerda*/
+    padding-right: 100px; /*espaçamento direita*/
+    padding-bottom: 100px; /*espaçamento baixo*/
+    background-image: url('img/fundo.jpg'); /*imagem de fundo*/
+    background-position: center; /*posição da imagem de fundo*/
+    background-size: cover; /*tamanho da imagem de fundo*/
+    overflow: hidden;   /*remove a barra de rolagem, remove a sobra*/
+}
+
+.caixa-conteudo {
+    width: 100%; /*largura total*/
+    display: flex; /*flexbox*/
+    align-items: center; /*alinha verticalmente ao centro*/
+    justify-content: space-between; /*espaçamento entre os elementos*/
+}
+
+.caixa-textos {
+    width: 600px; /*largura*/
+}
+
+h2 {
+    color: #fff; /*cor do texto*/
+    font-weight: 600; /*espessura da fonte*/
+    font-size: 60px; /*tamanho da fonte*/
+}
+
+.texto-starbucks {
+    color: #017143; /*cor do texto*/
+    font-weight: 900; /*espessura da fonte*/
+    font-size: 70px; /*tamanho da fonte*/
+}   
+.paragrafo {
+    font-size: 16px; /*tamanho da fonte*/
+    color: #fff; /*cor do texto*/
+}
+
+button {
+    background-color: #017143;  /*cor do fundo*/
+    color: #fff; /*cor do texto*/
+    margin-top: 30px; /*espaçamento cima*/
+    padding: 10px; /*espaçamento interno*/;
+    border: none; /*remove borda*/
+    cursor: pointer; /*muda o cursor ao passar o mouse*/
+    border-radius: 40px; /*borda arredondada*/
+    transition: 0.5s; /*transição suave*/
+}
+
+button:hover {
+    background-color: #00b368; /*cor do fundo ao passar o mouse*/
+    padding: 12px;/*aumenta o espaçamento interno ao passar o mouse*/
+}
+
+.logo {
+    width: 80px; /*largura do logo*/
+}
+
+.caixa-imagem {
+    width: 600px; /*largura da imagem*/
+    display: flex; /*flexbox*/
+    justify-content: flex-end; /*alinha a imagem a direita*/
+    margin-top: 200px; /*espaçamento cima*/
+}
+
+.imagem-copo {
+    width: 340px; /*largura da imagem*/
+}
+
+.caixa-menu {
+    display: flex; /*flexbox*/
+    justify-content: center; /*alinha o menu a direita*/
+}
+
+.botao-menu {
+    width: 80px; /*largura do botão*/
+    cursor: pointer; /*muda o cursor ao passar o mouse*/
+    margin: 10px; /*espaçamento entre os botões*/
+
+}
+
+.circulo {
+    background-color: #017143; /*cor do círculo*/
+    width: 100%; /*largura total*/
+    height: 100%; /*altura total*/
+    position: absolute; /*posição absoluta; quero colocar no local exatamente onde quero*/
+    top: 0; /*distância do topo*/
+    left: 0; /*distância da esquerda*/
+    clip-path: circle(600px at right 800px); /*recorta o círculo*/
+    z-index: -1; /*coloca o círculo atrás dos outros elementos*/
+}
