@@ -21,9 +21,14 @@ Seletor
 propriedade
 valor
 
-#4 JAVASCRIPT -
+#4 JAVASCRIPT - Vida a aplicação
+variáveis
+funções
+algoritmo
+lógica de programação
 
 
 #5 INSERIR UM(A) assistente virtual
+botpress
 
 
