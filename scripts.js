@@ -16,13 +16,13 @@
 
 
 let circulo = document.querySelector(".circulo") /*vou no index html e pego a classe cirulo*/
-let imagem = document.querySelector(".copo") /*vou no index html e pego a classe copo*/
+let imagemCopo = document.querySelector(".imagem-copo") /*vou no index html e pego a classe copo*/
 
 
 function trocarAcor(cor){
     circulo.style.background = cor /*mudar a cor do circulo*/
 }
 
-function trocarImagem(endereco){
-    imagem.src = endereco /*mudar a imagem do copo*/
+function trocarImagem(imagem){
+    imagemCopo.src = imagem /*mudar a imagem do copo*/
 }
